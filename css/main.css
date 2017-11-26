@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html body {	
+	background-color: #BA7B4C;
+	font-size: 30px;
+	line-height: 0.7;
+}
+.wrapper {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	margin: 150px auto;
+	padding-top: 10px;
+	background-color: #1B7D00;
+	box-shadow: inset 0 0 20px;
+	border-radius: 10px;
+}
+.wrapper p {
+  margin-bottom: 10px;
+}
+.gameField {
+	width: 240px;
+	margin: 0 auto;	
+}
+.pic, .resMessage {
+	width: 300px;
+	height: 150px;		
+	position: absolute;
+	top: 46px;
+	left: -22px;
+	background-color: #4C9ED9;
+	border-radius: 10px;
+	padding-top: 20px;
+	text-align: center;
+	display: none;
+}
+.resMessage {
+	line-height: 4;
+	color: #fff;
+}
+.symbol {
+	display: inline-block;
+	padding: 5px;	
+}
+.pic .symbol:nth-child(2) {
+	margin-right: 10px;
+}
+.symbol:hover {
+	background: rgba(0,0,0, .3);
+}
+.cell {	
+	width: 80px;
+	height: 80px;
+	display: inline-block;		
+}
+.cell:nth-child(4), .cell:nth-child(6){
+	border-bottom: 2px solid #000;
+	border-top: 2px solid #000;
+}
+.cell:nth-child(5) {
+	border: 2px solid #000;
+}
+.cell:nth-child(2), .cell:nth-child(8) {
+	border-right: 2px solid #000;
+	border-left: 2px solid #000;
+}
+.h_turn, .c_turn {
+	display: none;
+	width: 150px;
+	height: 54px; 
+	position: absolute;
+	top: -54px;
+	left: 103px;
+	background-color: #4C9ED9;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	line-height: 1.1;
+	color: #fff;
+	text-align: center;
+}
+.h_turn {	
+	left: 6px;
+	line-height: 2.1;
+}
+img {
+  width: 50px;
+  height: 50px;
+}
